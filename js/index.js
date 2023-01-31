@@ -10,11 +10,11 @@ function verifierResultatAddition() {
     var isCorrect = (resultatAttendu === resultatSaisi)
     if (isCorrect) {
 // alert("Le résultat saisi est bon")
-        document.getElementById("information").innerHTML = "Le résultat est correct"
-        document.getElementById("information").setAttribute("style", "color: lightgreen")
+        document.getElementById("informationAddition").innerHTML = "Le résultat est correct"
+        document.getElementById("informationAddition").setAttribute("style", "color: lightgreen")
     } else {
-        document.getElementById("information").innerHTML = "Le résultat est faux"
-        document.getElementById("information").setAttribute("style", "color: red")
+        document.getElementById("informationAddition").innerHTML = "Le résultat est faux"
+        document.getElementById("informationAddition").setAttribute("style", "color: red")
 // alert("Le résultat saisi est faux")
     }
 
