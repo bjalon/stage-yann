@@ -13,6 +13,8 @@ function generateNewNumbers() {
     b = getRandomInt(100)
     document.getElementById("a").innerHTML = a
     document.getElementById("b").innerHTML = b
+    document.getElementById("informationAddition").innerHTML = ""
+    document.getElementById("informationMultiplication").innerHTML = ""
     var resultatSaisi = null
 }
 
