@@ -1,11 +1,20 @@
-var a = 12
-var b = 13
-document.getElementById("a").innerHTML = a
-document.getElementById("b").innerHTML = b
-var resultatSaisi = null
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
+var a
+var b
 var successfulAudio = new Audio('audio/win.wav');
 var failedAudio = new Audio('audio/fail.wav');
+
+
+function generateNewNumbers() {
+    a = getRandomInt(100)
+    b = getRandomInt(100)
+    document.getElementById("a").innerHTML = a
+    document.getElementById("b").innerHTML = b
+    var resultatSaisi = null
+}
 
 function verifierResultatAddition() {
     resultatSaisi = parseInt(document.getElementById("inputResultAddition").value)
@@ -13,9 +22,9 @@ function verifierResultatAddition() {
     var isCorrect = (resultatAttendu === resultatSaisi)
     if (isCorrect) {
         // alert("Le résultat saisi est bon")
-document.getElementById("informationAddition").innerHTML = "Le résultat est correct"
-document.getElementById("informationAddition").setAttribute("style", "color: lightgreen")
-successfulAudio.play();
+        document.getElementById("informationAddition").innerHTML = "Le résultat est correct"
+        document.getElementById("informationAddition").setAttribute("style", "color: lightgreen")
+        successfulAudio.play();
     } else {
         document.getElementById("informationAddition").innerHTML = "Le résultat est faux"
         document.getElementById("informationAddition").setAttribute("style", "color: red")
@@ -40,3 +49,5 @@ function verifierResultatMultiplication() {
     }
 
 }
+
+generateNewNumbers()
