@@ -1,6 +1,6 @@
 import time
 
-# Déclaration d'une fonction
+# Déclaration d'une fonction hé
 # KOLTIN
 # fun nomFonction(): Unit {}
 # JAVA
