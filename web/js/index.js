@@ -12,15 +12,15 @@ function verifierResultatAddition() {
     var resultatAttendu = a + b
     var isCorrect = (resultatAttendu === resultatSaisi)
     if (isCorrect) {
-// alert("Le résultat saisi est bon")
-        document.getElementById("informationAddition").innerHTML = "Le résultat est correct"
-        document.getElementById("informationAddition").setAttribute("style", "color: lightgreen")
-        successfulAudio.play();
+        // alert("Le résultat saisi est bon")
+document.getElementById("informationAddition").innerHTML = "Le résultat est correct"
+document.getElementById("informationAddition").setAttribute("style", "color: lightgreen")
+successfulAudio.play();
     } else {
         document.getElementById("informationAddition").innerHTML = "Le résultat est faux"
         document.getElementById("informationAddition").setAttribute("style", "color: red")
         failedAudio.play();
-// alert("Le résultat saisi est faux")
+        // alert("Le résultat saisi est faux")
     }
 
 }
