@@ -1,0 +1,9 @@
+[Unit]
+Description=Paranoid service
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/yann/stage-yann/main.py
+
+[Install]
+WantedBy=multi-user.target
