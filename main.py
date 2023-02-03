@@ -121,7 +121,7 @@ def detectMovement():
 def capturePhoto():
     global captureIndex
     
-    newpath = r'/tmp/yann' 
+    newpath = r'/home/yann/stage-yann/static/captures' 
     if not os.path.exists(newpath):
         os.makedirs(newpath)
 

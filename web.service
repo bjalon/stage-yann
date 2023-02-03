@@ -1,0 +1,9 @@
+[Unit]
+Description=Web service
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/yann/stage-yann/web.py
+
+[Install]
+WantedBy=multi-user.target
